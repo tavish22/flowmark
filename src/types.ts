@@ -1,0 +1,1 @@
+export type Priority="low"|"medium"|"high";export interface Task{id:string;title:string;done:boolean;priority:Priority;due?:string;category:string;minutes:number;created:string}export interface State{tasks:Task[]}
