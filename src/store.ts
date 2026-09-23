@@ -1,0 +1,1 @@
+import type{State}from"./types";const K="flowmark-v1";export const load=():State=>{try{return JSON.parse(localStorage.getItem(K)||'{"tasks":[]}')}catch{return{tasks:[]}}};export const save=(s:State)=>localStorage.setItem(K,JSON.stringify(s));export const uid=()=>crypto.randomUUID();
